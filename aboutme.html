@@ -1,0 +1,222 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aboute me</title>
+    <style>
+        .sidebar {
+            /* background-color: red; */
+            background-color: rgb(211, 202, 202);
+            width: 434px;
+            /* height: 100vh; */
+        }
+        
+        .sidebar nav {
+            padding: 45px;
+        }
+        
+        .sidebar nav li {
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+        
+        .sidebar nav li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            /*This will put the text to the leftmost upward of window*/
+        }
+        
+        .main {
+            /* background-color: yellow; */
+            width: 90vw;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .info {
+            /* background-color: beige; */
+            /* background-color: blanchedalmond; */
+            height: 78vh;
+            width: 80vw;
+            margin: 140px auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 26px;
+            margin: auto;
+        }
+        
+        .devimg img {
+            width: 227px;
+            height: 78vh;
+        }
+        
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .h1 {
+            font-size: 60px;
+        }
+        
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        .about {
+            font-size: 40px;
+        }
+        
+        .p {
+            font-size: 29px;
+            margin-top: 23px;
+        }
+        
+        .buttons {
+            margin-top: 34px;
+        }
+        
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        
+        .buttons button:hover {
+            color: dodgerblue;
+            background-color: wheat;
+        }
+        
+        .intro h2 {
+            font-family: "Courier New", Courier, monospace;
+            margin: 12px;
+        }
+        
+        .intro p {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 25px;
+        }
+        
+        .skillcontainer {
+            padding: 12px;
+        }
+        
+        .skills {
+            width: 265px;
+            height: 6px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        
+        .skillitem {
+            display: grid;
+            flex-direction: column;
+        }
+        
+        .t100 {
+            width: 265px;
+            background-color: darkred;
+        }
+        
+        .t75 {
+            width: 177px;
+            background-color: red;
+        }
+        
+        .t50 {
+            width: 132px;
+            background-color: darksalmon;
+        }
+        
+        .t25 {
+            width: 88px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="intro">
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, culpa inventore illo minima sint, rem ea animi rerum cumque temporibus natus dolor dolorem voluptate reprehenderit beatae numquam earum neque deserunt.
+                </p>
+                <h2>My Skills</h2>
+                <div class="skillcontainer">
+                    <div class="skillitem">
+                        C :
+                        <div class="skills t100 "></div>
+                    </div>
+                    <div class="skillitem">
+                        C++ :
+                        <div class="skills t100 "></div>
+                    </div>
+                    <div class="skillitem">
+                        MYSQL :
+                        <div class="skills t100 "></div>
+                    </div>
+                    <div class="skillitem">
+                        JAVA :
+                        <div class="skills t75 "></div>
+                    </div>
+                    <div class="skillitem">
+                        PYTHON :
+                        <div class="skills t50 "></div>
+                    </div>
+                    <div class="skillitem">
+                        HTML :
+                        <div class="skills t100 "></div>
+                    </div>
+                    <div class="skillitem">
+                        CSS :
+                        <div class="skills t75 "></div>
+                    </div>
+                    <div class="skillitem">
+                        JAVASCRIPT :
+                        <div class="skills t50 "></div>
+                    </div>
+                    <div class="skillitem">
+                        REACT :
+                        <div class="skills t25 "></div>
+                    </div>
+                    <div class="skillitem">
+                        NODE.JS :
+                        <div class="skills t25 "></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

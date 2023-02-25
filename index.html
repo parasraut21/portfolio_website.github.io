@@ -1,0 +1,210 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MY WEBSITE</title>
+    <style>
+        .sidebar {
+            /* background-color: red; */
+            background-color: rgb(211, 202, 202);
+            /* width: 434px; */
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .sidebar nav {
+            padding: 45px;
+        }
+        
+        .sidebar nav li {
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+        
+        .sidebar nav li a {
+            text-decoration: none;
+            color: black;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            /*This will put the text to the leftmost upward of window*/
+        }
+        
+        .main {
+            /* background-color: yellow; */
+            width: 90vw;
+        }
+        
+        .container {
+            display: flex;
+        }
+        
+        .info {
+            /* background-color: beige; */
+            /* background-color: blanchedalmond; */
+            height: 78vh;
+            width: 80vw;
+            margin: 140px auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 26px;
+            margin: auto;
+        }
+        
+        .devimg img {
+            width: 227px;
+            height: 78vh;
+        }
+        
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        
+        .hello {
+            font-size: 60px;
+        }
+        
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        
+        .about {
+            font-size: 40px;
+        }
+        
+        .moreabout {
+            font-size: 29px;
+            margin-top: 23px;
+        }
+        
+        .buttons {
+            margin-top: 34px;
+        }
+        
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        
+        .buttons button:hover {
+            color: dodgerblue;
+            background-color: wheat;
+        }
+        
+        @media (max-width: 600px) {
+            * {
+                background-color: red;
+            }
+        }
+        
+        .menu {
+            /* position: absolute; */
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .ham {
+            padding: 5px;
+        }
+        
+        .cross {
+            margin-left: 143px;
+        }
+        
+        .sidebargo {
+            transform: translate(-443px, 0px);
+            position: absolute;
+        }
+        
+        .ham_1 {
+            padding: 9px;
+            margin-top: -460px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <svg class="ham_1" xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 448 512">
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+
+        <div class="sidebar t sidebargo">
+            <div class="menu">
+                <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 320 512">
+            <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+            <path
+              d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"
+            />
+          </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="info">
+                <div class="devinfo">
+                    <div class="hello">Hii</div>
+                    <div class="name">I am Paras Raut</div>
+                    <div class="about">Web Developper</div>
+                    <div class="moreabout">
+                        Hello My Name is Paras Raut I am pursuing B tech from MIT-World Peace University and I am studying computer engineering .
+                    </div>
+                    <div class="buttons">
+                        <a href="cv.txt" target="_blank"><button>Download CV</button></a>
+                        <a href="contact.html"><button>Contact</button></a>
+                    </div>
+                </div>
+                <div class="devimg">
+                    <img src="ppp.jpg" alt="Paras Raut" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".ham_1").addEventListener("click", () => {
+            document.querySelector(".sidebar").classList.toggle("sidebargo");
+            if (
+                document.querySelector(".sidebar").classList.contains("sidebargo")
+            ) {
+                document.querySelector(".ham").style.display = "inline";
+                document.querySelector(".ham_1").style.display = "none";
+            }
+        });
+        document.querySelector(".cross").addEventListener("click", () => {
+            document.querySelector(".sidebar").classList.toggle("sidebargo");
+            if (
+                document.querySelector(".sidebar").classList.contains("sidebargo")
+            ) {
+                document.querySelector(".ham").style.display = "inline";
+                document.querySelector(".ham_1").style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
