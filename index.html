@@ -1,16 +1,31 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY WEBSITE</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        
+        html {
+            height: 100vh;
+            background: linear-gradient(#21b3e1, #fff);
+            position: relative;
+            overflow: hidden;
+        }
+        
         .sidebar {
             /* background-color: red; */
             background-color: rgb(211, 202, 202);
             /* width: 434px; */
             transition: transform 0.3s ease-in-out;
+            position: absolute;
         }
         
         .sidebar nav {
@@ -56,9 +71,9 @@
         }
         
         .devimg img {
-            width: 227px;
+            width: px;
             height: 78vh;
-            margin-left: 300px;
+            margin-left: 18px;
             margin-top: 50px;
         }
         
@@ -66,30 +81,30 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
-            padding-left: 70px;
+            padding-left: 0px;
             margin-top: 50px;
         }
         
         .hello {
-            font-size: 60px;
+            font-size: 5.0em;
         }
         
         .name {
-            font-size: 50px;
+            font-size: 4.0em;
             font-weight: bold;
         }
         
         .about {
-            font-size: 40px;
+            font-size: 3.0em;
         }
         
         .moreabout {
-            font-size: 29px;
-            margin-top: 23px;
+            font-size: 1.9em;
+            margin-top: 1.3em;
         }
         
         .buttons {
-            margin-top: 34px;
+            margin-top: 2.4em;
         }
         
         .buttons button {
@@ -98,7 +113,7 @@
             color: white;
             background-color: dodgerblue;
             font-weight: bold;
-            font-size: 21px;
+            font-size: 1.1rem;
             margin: 0 3px;
             cursor: pointer;
         }
@@ -108,49 +123,56 @@
             background-color: wheat;
         }
         
-        @media (max-width:412px) {
-            .ham_1 {
-                width: 100px;
-                height: 100px;
-                font-size: 20px;
-            }
+        .menu {
+            /* position: absolute; */
+            cursor: pointer;
+            top: 10px;
+            left: 10px;
+        }
+        
+        .ham {
+            padding: 5px;
+        }
+        
+        .cross {
+            margin-left: 180px;
+        }
+        
+        .sidebargo {
+            transform: translate(-443px, 0px);
+            position: absolute;
+        }
+        
+        .ham_1 {
+            padding: 2.0em;
+            margin-top: -480px;
+            cursor: pointer;
         }
         
         @media (max-width: 600px) {
-            .devimg img {
-                width: 155px;
-                height: 250px;
-                margin-left: 60px;
-                margin-top: 25px;
+            .devimg {
+                display: none;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .devimg {
+                display: none;
             }
             .devinfo {
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                padding-left: 30px;
-                margin-left: -237px;
-                margin-top: 115px;
-                font-size: 10px;
+                font-size: 7px;
+            }
+        }
+        
+        @media (max-width: 619px) {
+            .devimg {
+                display: none;
+            }
+            .devinfo {
+                font-size: 7px;
             }
             .ham_1 {
-                padding: 20px;
-                margin-top: 0px;
-                cursor: pointer;
                 width: 100px;
-            }
-            .hello {
-                font-size: 30px;
-            }
-            .name {
-                font-size: 25px;
-                font-weight: bold;
-            }
-            .about {
-                font-size: 20px;
-            }
-            .moreabout {
-                font-size: 10px;
-                margin-top: 12px;
             }
         }
         
@@ -178,6 +200,7 @@
             padding: 20px;
             margin-top: -480px;
             cursor: pointer;
+            position: relative;
         }
     </style>
 </head>
@@ -185,6 +208,11 @@
 <body>
 
     <div class="container">
+        <div class="narbar">
+            <nav>
+
+            </nav>
+        </div>
         <svg class="ham_1" xmlns="http://www.w3.org/2000/svg" width="30px" viewBox="0 0 448 512">
         <path
           d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
@@ -212,9 +240,7 @@
         </div>
         <div class="main">
             <div class="info">
-                <div class="devimg">
-                    <img src="ppp.jpg" alt="Paras Raut" />
-                </div>
+
                 <div class="devinfo">
                     <div class="hello">Hii</div>
                     <div class="name">I am Paras Raut</div>
@@ -227,10 +253,16 @@
                         <a href="contact.html"><button>Contact</button></a>
                     </div>
                 </div>
+                <div class="devimg">
+                    <img src="ppp.jpg" alt="Paras Raut" />
+                </div>
 
             </div>
+
         </div>
+
     </div>
+
     <script>
         document.querySelector(".ham_1").addEventListener("click", () => {
             document.querySelector(".sidebar").classList.toggle("sidebargo");
