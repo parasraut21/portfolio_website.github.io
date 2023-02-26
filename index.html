@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY WEBSITE</title>
     <style>
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -202,12 +207,31 @@
             cursor: pointer;
             position: relative;
         }
+        
+        .a {
+            height: 100vh;
+            /* padding: 9px 14px; */
+            border-radius: 9px;
+            color: white;
+            background-color: dodgerblue;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin: 0 3px;
+            cursor: pointer;
+            width: 4.5vw;
+        }
+        
+        .a:hover {
+            color: dodgerblue;
+            background: linear-gradient(#21b3e1, #fff);
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
+        <button class="a" onclick="myFunction()">Dark Mode</button>
         <div class="narbar">
             <nav>
 
@@ -244,7 +268,7 @@
                 <div class="devinfo">
                     <div class="hello">Hii</div>
                     <div class="name">I am Paras Raut</div>
-                    <div class="about">Web Developper</div>
+                    <div class="about"> Web Developper </div>
                     <div class="moreabout">
                         Hello My Name is Paras Raut I am pursuing B tech from MIT-World Peace University and I am studying computer engineering .
                     </div>
@@ -262,7 +286,7 @@
         </div>
 
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
     <script>
         document.querySelector(".ham_1").addEventListener("click", () => {
             document.querySelector(".sidebar").classList.toggle("sidebargo");
@@ -279,7 +303,21 @@
             document.querySelector(".sidebar").classList.toggle("sidebargo");
             document.querySelector(".ham_1").style.display = 'inline';
         })
+
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+
+        //**********typing animation**********
+        var typed = new Typed(".about", {
+            strings: ["Web Designer", "Web Developer", "Android Developer", "Full Stack Developer"],
+            typeSpeed: 100,
+            BackSpeed: 40,
+            loop: true
+        })
     </script>
+
 </body>
 
 </html>
